@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>input</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    form {
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: start;
+      padding: 40px;
+    }
+
+    form .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    label span {
+      text-transform: capitalize;
+    }
+
+    label input {
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid #c4c4c4;
+    }
+
+    form button {
+      all: unset;
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 30px;
+      border-radius: 5px;
+      background-color: rgb(35, 35, 191);
+      color: white;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+
+    .req {
+      color: blue;
+    }
+
+    .req input {
+      border-color: blue;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .error input {
+      border-color: red;
+    }
+
+    #pdd {
+      all: unset;
+      padding: 4px;
+      border-radius: 10px;
+      border: solid grey;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Example form</h1>
+    <br>
+    <span data-id="All">All: 15 &nbsp;</span>
+    <span data-id="need">Need: 12 &nbsp;</span>
+    <span data-id="succes">Success: 8/12 &nbsp;</span>
+    <span data-id="wrong">Error: 4/12 &nbsp;</span>
+  </center>
+  <br>
+  <form name="signup">
+    <div class="col">
+      <label class="req" for="name">
+        <span>Name</span>
+        <input id="name" type="text" name="name" placeholder="name" />
+      </label>
+
+      <span>Surname</span>
+      <input type="text" name="Surname" placeholder="Surname" id="pdd">
+
+      <label class="req">
+        <span>Email adress</span>
+        <input type="text" name="Email">
+      </label>
+
+      <span>Phone number</span>
+      <input type="Phone" name="Phone" id="pdd">
+
+      <span>Your mom's name</span>
+      <input type="name" name="name" id="pdd">
+
+      <span>Your Pap's name</span>
+      <input type="name" name="name" id="pdd">
+    </div>
+
+    <div class="col">
+
+      <label class="req">
+        <span>Age</span>
+        <input type="Age" name="Age">
+      </label>
+
+      <label class="req">
+        <span>About you</span>
+        <input type="text" name="text">
+      </label>
+
+      <label class="req">
+        <span>What is Javascript?</span>
+        <input type="text" name="text">
+      </label>
+
+      <label class="req">
+        <span>What is Html?</span>
+        <input type="text" name="text">
+      </label>
+
+      <label class="req">
+        <span>What is CSS?</span>
+        <input type="text" name="text">
+      </label>
+
+      <span>Your favorite car</span>
+      <input type="text" name="text" id="pdd">
+    </div>
+
+    <button>submit</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
