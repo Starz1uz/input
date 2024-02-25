@@ -36,20 +36,3 @@ function submit(form) {
     console.log(user);
 }
 
-
-const input_all = document.querySelectorAll('input');
-const span = document.querySelectorAll('span[data-id]');
-
-let avter = {
-    all: 0,
-    need: 0,
-    succes: 0,
-    wrong: 0
-}
-
-span.forEach(span => {
-    const dataId = span.dataset.id;
-    const value = parseInt(span.textContent.trim()); 
-    avter[dataId] = value;
-})
-
