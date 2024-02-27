@@ -72,8 +72,19 @@
       color: red;
     }
 
+
     .error input {
       border-color: red;
+    }
+
+    .error p {
+      background-image: url(./img/warn.svg);
+      background-size: contain;
+      width: 16px;
+      height: 18px;
+      position: relative;
+      left: 100%;
+      top: 56px;
     }
 
     #pdd {
@@ -91,13 +102,14 @@
     <br>
     <span data-id="All">All: 12 &nbsp;</span>
     <span data-id="need">Need: 12 &nbsp;</span>
-    <span data-id="succes">Success: 8/12 &nbsp;</span>
-    <span data-id="wrong">Error: 4/12 &nbsp;</span>
+    <span id="succes">Success: 0/12 &nbsp;</span>
+    <span id="wrong">Error: 0/12 &nbsp;</span>
   </center>
   <br>
   <form name="signup">
     <div class="col">
       <label class="req" for="name">
+        <p></p>
         <span>Name</span>
         <input id="name" type="name" name="name" placeholder="name" />
       </label>
@@ -106,6 +118,7 @@
       <input type="surname" name="Surname" placeholder="Surname" id="pdd">
 
       <label class="req">
+        <p></p>
         <span>Email adress</span>
         <input type="text" name="Email">
       </label>
@@ -123,26 +136,31 @@
     <div class="col">
 
       <label class="req">
+        <p></p>
         <span>Age</span>
         <input type="Age" name="Age">
       </label>
 
       <label class="req">
+        <p></p>
         <span>About you</span>
         <input type="text" name="about">
       </label>
 
       <label class="req">
+        <p></p>
         <span>What is Javascript?</span>
         <input type="js" name="js">
       </label>
 
       <label class="req">
+        <p></p>
         <span>What is Html?</span>
         <input type="html" name="html">
       </label>
 
       <label class="req">
+        <p></p>
         <span>What is CSS?</span>
         <input type="css" name="css">
       </label>
